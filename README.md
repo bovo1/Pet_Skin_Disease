@@ -1,4 +1,4 @@
-# Pet_Skin_Disease
+# Pet_Skin_Disease 2024-02-06 ~
 
 데이터: AIhub 반려동물 피부 질환 데이터셋  
 훈련모델: YOLOv8-segment-large  
