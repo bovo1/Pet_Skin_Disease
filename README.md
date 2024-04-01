@@ -36,3 +36,11 @@ local minima에 빠진 것인지 아니면 모델이 학습을 못하고 있는 
 ![confusion_matrix_normalized (1)](https://github.com/bovo1/Pet_Skin_Disease/assets/110110403/d4a43dff-7d49-4b6b-8e94-cc913b825bc2)
 ![BoxPR_curve](https://github.com/bovo1/Pet_Skin_Disease/assets/110110403/2df2af85-fa24-4171-a09b-4d4d8a41d9df)
 
+### <2024.04.01 중간 점검>
+local minima의 문제인지 아니면 모델이 학습을 하고 있지 못하는 상태인지 확인하는 과정입니다.
+learning rate를 줄여서 작고 자세하게 학습을 해서 학습을 이어가보려고 했으나 1.8에서 1.7로 낮아졌으나 그 이후의 epoch에 대해선 변화가 없습니다.  
+이 다음은 learning rate를 올려 학습 진행위치를 바꿔보려고 했으나 이마저도 변화가 없었습니다.  
+large 모델도 46만 파라미터를 가지고 있어서 절대 작지 않다고 생각했었는데 역시 아무도 모르는 일인 것 같습니다.  
+지금은 large 모델보다 더 큰 x 모델을 가지고 다시 올바른 하이퍼파라미터를 찾아 훈련을 시작하고 있습니다.  
+
+
