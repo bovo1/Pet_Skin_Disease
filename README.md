@@ -2,8 +2,10 @@
 
 #### 데이터: AIhub 반려동물 피부 질환 데이터셋  
 #### 훈련모델: YOLOv8-segment-large  
+
 ![labels](https://github.com/bovo1/Pet_Skin_Disease/assets/110110403/dde859f5-852c-4249-b621-a6f0c0089299)
 ![labels_correlogram](https://github.com/bovo1/Pet_Skin_Disease/assets/110110403/ec6be181-ce66-4496-9865-39e7a751f84c)
+![images](https://github.com/bovo1/Pet_Skin_Disease/assets/110110403/4ba90f8c-1772-45fa-87ee-501203b8453c)
 
 
 
