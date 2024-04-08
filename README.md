@@ -52,7 +52,4 @@ x 모델은 계산량이 많아서 가끔 발생하는 loss나 metrics 값을 na
 ![BoxPR_curve (1)](https://github.com/bovo1/Pet_Skin_Disease/assets/110110403/ce00ac57-a2ff-4afb-9e1c-0695be5be5a7)
 
 train, val의 loss가 1.35/1.7까지 줄어들고 map50(Box)이 0.44 까지 올라왔습니다. 
-이렇게 상승한 이유는 YOLOv8이 아닌 YOLOv9를 사용했습니다.
-YOLOv9는 YOLOv8 보다 크기가 커서 시간도 많이 걸립니다.  
-YOLOv8 훈련을 포기한 것은 아닙니다. YOLOv8의 x모델을 훈련하다가 다른 저자가 YOLOv9를 개발하게 되면서 성능그래프가 눈에 띄도록 상승한 것이 보여서 YOLOv9를 훈련시키게 되었습니다.  
 
