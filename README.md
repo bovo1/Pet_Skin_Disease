@@ -45,4 +45,14 @@ large 모델도 꽤 많은 레이어를 가지고 있어서 절대 작지 않다
 x 모델은 계산량이 많아서 가끔 발생하는 loss나 metrics 값을 nan으로 뜨는 오류를 해결하기 위해 amp를 False로 두어야 하는데 그렇게 되면 1epoch 당 2~3시간이 걸리게 됩니다.  
 일단 조금 더 자세하게 학습방향을 다시 생각하여 업데이트 하도록 하겠습니다.
 
+### <2024.04.08 중간 점검>
+03.29의 모델 confusion matrix를 보면 거의 예측을 하지 못하고 있는 상태였습니다.  
+모델에 약간의 성능 향상이 있었습니다.  
+![confusion_matrix_normalized (2)](https://github.com/bovo1/Pet_Skin_Disease/assets/110110403/3012deb4-87fd-4b2f-a801-fa6bb693620d)
+![BoxPR_curve (1)](https://github.com/bovo1/Pet_Skin_Disease/assets/110110403/ce00ac57-a2ff-4afb-9e1c-0695be5be5a7)
+
+train, val의 loss가 1.35/1.7까지 줄어들고 map50(Box)이 0.44 까지 올라왔습니다. 
+이렇게 상승한 이유는 YOLOv8이 아닌 YOLOv9를 사용했습니다.
+YOLOv9는 YOLOv8 보다 크기가 커서 시간도 많이 걸립니다.  
+YOLOv8 훈련을 포기한 것은 아닙니다. YOLOv8의 x모델을 훈련하다가 다른 저자가 YOLOv9를 개발하게 되면서 성능그래프가 눈에 띄도록 상승한 것이 보여서 YOLOv9를 훈련시키게 되었습니다.  
 
